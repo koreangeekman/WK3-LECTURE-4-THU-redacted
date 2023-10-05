@@ -7,6 +7,17 @@ function _saveCases() {
 }
 
 class CasesService {
+
+  setActiveCase(id) {
+    AppState.activeCase = AppState.cases.find(c => c.id == id)
+  }
+
+  unlockCase() {
+    AppState.activeCase.unlocked = true;
+    AppState.emit('activeCase');
+  }
+
+
   addCase(data) {
     AppState.cases.push(data);
     AppState.emit('cases');

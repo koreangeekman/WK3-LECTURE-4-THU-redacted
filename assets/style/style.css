@@ -1,14 +1,27 @@
 /* BASIC STYLES HERE */
 
 i {
-  font-size: 10rem;
+  font-size: 24rem;
   margin: 0;
   padding: 0;
+  line-height: 24rem;
+  z-index: 0;
 }
 
-.card {
+.agencyName {
+  font-size: 3rem;
+  color: black;
+  position: relative;
+  top: -13rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.bordered {
   width: fit-content;
-  height: fit-content;
   margin: 0;
   padding: 0;
+  border-radius: 1rem;
+  /* border: 2px solid white; */
+  /* background-color: #123456b0; */
 }

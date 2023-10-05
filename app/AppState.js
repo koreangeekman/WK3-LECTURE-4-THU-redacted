@@ -14,6 +14,8 @@ class ObservableAppState extends EventEmitter {
 
   cases = [new Case()]
 
+  activeCase = null
+
   // !SECTION GLOBAL VARIABLES
 
   // NOTE Used to load initial data
