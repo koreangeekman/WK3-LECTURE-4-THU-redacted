@@ -17,6 +17,11 @@ class CasesService {
     AppState.emit('activeCase');
   }
 
+  lockCase(caseReport) {
+    AppState.activeCase.report = caseReport;
+    AppState.activeCase.unlocked = false;
+    AppState.emit('activeCase');
+  }
 
   addCase(data) {
     AppState.cases.push(data);

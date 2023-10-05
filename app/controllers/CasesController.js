@@ -5,7 +5,7 @@ import { Pop } from "../utils/Pop.js";
 import { setHTML, setText } from "../utils/Writer.js";
 
 function _drawCaseCount() {
-  setText('caseCount', `${AppState.cases.length} cases on file`)
+  setHTML('caseCount', `${AppState.cases.length} CASES ON FILE`)
 }
 
 function _drawCases() {
@@ -33,6 +33,11 @@ export class CasesController {
 
   unlockCase() {
     casesService.unlockCase();
+  }
+
+  lockCase() {
+    const caseReport = document.getElementById('caseReport').innerText;
+    casesService.lockCase(caseReport);
   }
 
   addCase(event) {

@@ -12,7 +12,12 @@ class ObservableAppState extends EventEmitter {
 
   // SECTION GLOBAL VARIABLES
 
-  cases = [new Case()]
+  cases = [
+    new Case({ agency: "NSA", report: "redacted" }),
+    new Case({ agency: "CIA", report: "reports not filed" }),
+    new Case({ agency: "ISA", report: "super secret codex" }),
+    new Case({ agency: "DED", })
+  ]
 
   activeCase = null
 
@@ -20,7 +25,7 @@ class ObservableAppState extends EventEmitter {
 
   // NOTE Used to load initial data
   init() {
-    loadState('cases', [Case])
+    // loadState('cases', [Case])
   }
 
 }

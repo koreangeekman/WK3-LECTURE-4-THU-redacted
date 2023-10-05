@@ -1,18 +1,24 @@
 /* BASIC STYLES HERE */
 
-i {
-  font-size: 24rem;
+.agencyFolder {
+  font-size: 12rem;
   margin: 0;
   padding: 0;
-  line-height: 24rem;
+  line-height: 12rem;
   z-index: 0;
 }
 
+.folderState {
+  border-radius: 0.5rem;
+  border: 2px solid red;
+  padding: 5px;
+}
+
 .agencyName {
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
   position: relative;
-  top: -13rem;
+  top: -7rem;
   z-index: 1;
   text-align: center;
 }
